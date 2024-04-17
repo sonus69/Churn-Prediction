@@ -1,0 +1,20 @@
+<html>
+
+        <h1>  PREDICTION :  </h1>
+    
+        {%if data == 1}
+        <h1>Your customer gonna stop using your service</h1>  
+    
+        {%else%}
+        <h1>Your customer gonna continue to using your service</h1>
+        
+        {%endif%}
+        
+        <br><br>
+    <a href="{{ url_for('predict') }}">go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>

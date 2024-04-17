@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Churn Detector</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&family=Secular+One&display=swap">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #c91286;
+    background-color: #f0f0f0;
+}
+.navbar {
+    background-color: #f0f0f0;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: 20px;
+}
+
+.navbar a {
+    color: #3f024e;
+    text-decoration: none;
+    padding: 20px 25px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+  .navbar a:hover {
+    background-color: #8005a5;
+}
+
+  .left-align {
+  text-align: left;
+
+}
+
+  .hero {
+    background-color: #3c004e;
+    padding: 50px;
+    text-align: center;
+    margin-left: 170px;
+    border-radius: 20px;
+}
+  
+  .hero p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  .hero button {
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #c4b706;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .hero button:hover {
+    opacity: 0.9;
+  }
+
+  .hero image {
+    margin: 5px 10px 25px;
+    float: right;
+  }
+</style>
+
+</head>
+<body>
+<div class="navbar">
+  <div><a href="#">Churn Detector | Home</a></div>
+  <div>
+    <a href="{{ url_for('home')}}">Home</a>
+    <a href="{{ url_for('predict') }}">Predictions</a>
+    <a href="{{ url_for('aboutus') }}">About us</a>
+  </div>    
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>Grow Your Busisness With Us</h1>
+<div class="hero">
+  <p>Our mission is to provide service providers with predictions about which customers are likely to leave their service (churn), enabling appropriate preventive or retention measures to be taken to retain those customers.</p>
+  <button>GET STARTED</button>
+  <br><br><br><br>
+  <img src=" {{ url_for('static',filename='images/gambar.jpg') }}" align="right"/>
+</div>
+</body>
+</html>
